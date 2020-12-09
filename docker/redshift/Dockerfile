@@ -7,6 +7,6 @@ COPY requirements.txt requirements-extra.txt requirements-s3.txt /tmp/
 RUN pip install -r /tmp/requirements.txt
 RUN pip install -r /tmp/requirements-s3.txt
 RUN pip install -r /tmp/requirements-extra.txt
-RUN pip install sql-runner
+RUN pip install sql-runner[redshift]
 
 ENTRYPOINT ["sqlrunner"]
