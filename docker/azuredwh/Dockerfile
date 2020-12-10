@@ -13,6 +13,6 @@ COPY requirements.txt requirements-extra.txt /tmp/
 RUN pip install -r /tmp/requirements.txt 
 RUN pip install -r /tmp/requirements-extra.txt 
 
-RUN pip install sql-runner[azuredwh]
+RUN pip install sql-runner
 
 ENTRYPOINT ["sqlrunner"]
