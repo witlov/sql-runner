@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.5.0 (2021-03-20)
+
+- Update dependencies
+- Update python requirements to 3.8
+- Add optional `preprocess_names` feature also to `e` statements
+- Update bigquery, enabling staging 
+
+## 0.4.10 (2020-12-02)
+
+- Update dependencies for python3.9 compatibility
 ## 0.4.9 (2020-08-14)
 
 - Pin dependencies for boto3

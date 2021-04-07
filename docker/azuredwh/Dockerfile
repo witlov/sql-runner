@@ -7,7 +7,9 @@ RUN apt-get install -y curl apt-transport-https gnupg2 \
     && apt-get update \
     && ACCEPT_EULA=Y apt-get install -y msodbcsql17 mssql-tools
 RUN apt-get install -y git 
-RUN apt-get install -y python3-dev build-essential libpq-dev unixodbc-dev -y
+RUN apt-get install -y python3-dev gcc build-essential libpq-dev unixodbc-dev -y
+RUN curl -sS https://aka.ms/InstallAzureCli | bash 
+
 
 COPY requirements.txt requirements-extra.txt /tmp/
 RUN pip install -r /tmp/requirements.txt 
